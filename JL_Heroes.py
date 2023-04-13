@@ -8,7 +8,8 @@ titled_colum = {'Hero': column,
                 'Sex': ['M', 'M', 'F', 'M', 'M', 'F', 'M', 'M', 'M', 'F', 'M'],
                 'Key_Powers': ['Strength Speed Flight Heat Vision', 'Tech Weapons Armour', 'Strength Magic weapons', 'Speed', 'Ring', 'Wings Tech weapon', 'Strength Shapeshifting Flight Ghost', 'Tech Weapons', 'Water control Strength', 'Magic', 'Strength Tech Weapon'],
                 'JL_Member': ['Y', 'Y', 'Y', 'Y', 'Y', 'Y', 'Y', 'N', 'Y', 'N', 'N'], 
-                'Power_Levels': ['1000', '225', '750', '100', '700', '150', '550', '70', '290', '65', '200'], 'Alt_Power_Levels': column2,
+                'Power_Levels': ['1000', '225', '750', '100', '700', '150', '550', '70', '290', '65', '200'],
+                'Alt_Power_Levels': column2,
                 'Speed_Levels': ['700', '75', '110', '1000', '750', '100', '100', '75', '100', '50', '100'],
                 'Stamina_Recovery': ['1000', '100', '800', '200', '600', '200', '350', '90', '320', '75', '210']}      # create a dictionary, add new variable ('titled_column') then insert that variable into DataFrame
                                                                             # this will also create a header name for the column, it will replace the 0
@@ -24,6 +25,8 @@ select_row2 = data.iloc[4]['Power_Levels'] # using iloc[4] will print '700' whic
 select_row3 = data.iloc[5] # using iloc[5] will print entire column 5. So all Hawk Girl info 
 
 #print(data['Power_Levels']) # to access specific column, use data then add specific column using []
+Powers = data['Key_Powers']
+#print(Powers) 
 
 Superman_row = data.iloc[0] 
 #print(Superman_row) 
@@ -59,4 +62,12 @@ plt.title('D.C. Heroes')
 Pwr_Level.plot(kind='bar')  
 #plt.show() 
 
-print(column2)   
+#print(data)   
+
+#x = [column2]
+#for i in x:
+    #print(i)
+
+print(data)
+
+
