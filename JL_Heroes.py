@@ -23,10 +23,14 @@ select_row = data.iloc[7]['JL_Member']     # to select a row, create new variabl
 
 select_row2 = data.iloc[4]['Power_Levels'] # using iloc[4] will print '700' which is 'Power_Levels' column and row 4
 select_row3 = data.iloc[5] # using iloc[5] will print entire column 5. So all Hawk Girl info 
+select_row5 = data.iloc[4]['Key_Powers']
+print(select_row5)
 
 #print(data['Power_Levels']) # to access specific column, use data then add specific column using []
 Powers = data['Key_Powers']
 #print(Powers) 
+Pwr_Lvl = data['Power_Levels']
+#print(Pwr_Lvl)
 
 Superman_row = data.iloc[0] 
 #print(Superman_row) 
@@ -68,6 +72,6 @@ Pwr_Level.plot(kind='bar')
 #for i in x:
     #print(i)
 
-print(data)
+#print(data)
 
 
